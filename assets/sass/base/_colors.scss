@@ -1,0 +1,32 @@
+
+
+
+// colors
+$primary: #F15922;
+$secondary: #AED2ED;
+$dark: #1B1B1C;
+$warning: #FADE2F;
+$info: #E698F2;
+$danger: #FF0000;
+$white: #ffffff;
+$light: #F4F4F4;
+$deep: #DBDBDB;
+
+$primary-opacity: #FF000096;
+
+
+// typhography color 
+$heading-color: $dark;
+$title-color: $dark;
+$sub-title-color: $dark;
+$text-color: lighten($color: $dark, $amount: 20);
+$small-text-color: $dark;
+
+// background color 
+$bg-light: $light;
+$bg-deep: $deep;
+$bg-white: $white;
+$bg-dark: $dark;
+
+
+

@@ -1,0 +1,43 @@
+@use "../base/index" as *;
+@use "../partials/variables" as *;
+
+
+.product-card{
+    transition: .4s;
+    padding: 16px;
+    height: 100%;
+    box-shadow: $shadow-md;
+    transition: .4s;
+    &:hover{box-shadow: $shadow-sm;}
+
+    .card-img-top{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card-body{
+        .brand-logo{
+            width: 40px;
+            height: fit-content;
+            margin-top: 4px;
+        }
+        .regular-price{
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+        .disc-price{
+            background: lighten($color: $primary, $amount: 40);
+            border-radius: 4px;
+            padding: 8px 24px;
+            font-size: 21px;
+            font-weight: $semibold;
+            color: $primary;
+        }
+        .btn{width:100%}
+    }
+    
+}
+
+
+// media css start 

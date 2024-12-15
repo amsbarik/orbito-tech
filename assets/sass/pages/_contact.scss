@@ -1,0 +1,25 @@
+@use "../base/" as *;
+@use "../partials/" as *;
+
+
+@media (max-width: 1200px) {
+
+    .contact{
+        .card-title{
+            font-size: 14px;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    .contact{
+        .card-title{
+            font-size: 13px;
+        }
+
+        .form-check-label{font-size: 12px;}
+    }
+    
+}
