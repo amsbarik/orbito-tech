@@ -11,6 +11,7 @@
 // top slide css start 
 .top-slider{
     background: $bg-white;
+    margin-top: 30px;
     .top-slider-wrap{
         .slide-img{
             // height: 40rem;
@@ -50,6 +51,7 @@
                 padding: 0 0 24px 0;
                 height: 100%;
                 transition: .4s;
+                background: $bg-white;
                 &:hover{
                     background: $bg-deep;
                 }

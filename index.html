@@ -23,20 +23,33 @@
     <!--Main Navigation start-->
     <header>
         <!-- Navbar top start-->
-         <div class="container header visible-lg">
+         <div class="container header d-none d-lg-block">
             <div class=" header-wrap d-flex justify-content-between position-relative">
-                
-            <ul class="social-link d-flex m-0">
-                <li><a href="#"><i class="fa-brands fa-facebook"></i> </a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin"></i> </a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i> </a></li>
-                <li><a href="#"><i class="fa-brands fa-youtube"></i> </a></li>
-            </ul>
 
-            <div class="social-link">
-                <a href="tel: +880 17110000000" class="mobile me-3"> Have questions? Call now +880 1711 XXX XXX</a>
-                <a href="mailto: hello@gmail.com" title="hello@gmail.com">Need help? Contact us via email</a>
-            </div>
+                <div>
+                    <a class="navbar-brand " href="index.html" >
+                        <img src="assets/img/logo.png" class="object-fit-cover logo" alt="logo">
+                    </a>
+
+                    
+                </div>
+                <div class="search align-self-center flex-grow-1" >
+                    <form action="" role="search">
+                        <div class="input-group ">
+                            <input type="search" placeholder="Search products..."  aria-label="Search" class="form-control  "  aria-describedby="search-btn">
+                            <button class="btn btn-primary" type="button" >Search</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <ul class="d-flex users mb-0">
+                    <li class=""><a href="#" class="btn btn-primary">
+                        <div><i class="fa-brands fa-facebook"></i> </div>
+                        <div class="facebook text-start ms-2">Follow us on<br>facebook</div>
+                    </a></li>
+                    <li class="ms-3 me-2"><a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class=""><a href="#" class="btn btn-primary"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
     
              </div>
         </div>
@@ -49,137 +62,39 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="hidden-l">
-                    <a class="navbar-brand " href="index.html" >
-                        <img src="assets/img/logo.png" class="object-fit-cover logo-sm" alt="logo">
-                    </a>
-                </div>
-
-                <!-- <div class="hidden-lg"><a href="#" class="user-sm"><i class="fa-regular fa-user"></i></a></div> -->
-                
                 <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body overflow-visible">
-
-                        <!-- <div class="search-sm align-self-center" >
-                            <form action="" role="search">
-                                <div class="input-group ">
-                                    <input type="search" placeholder="Search for products..." aria-label="Search" class="form-control rounded-0 "  aria-describedby="search-btn">
-                                    <button class="btn search-btn" type="button" ><i class="fa-solid fa-magnifying-glass"></i></button>
-                                </div>
-                            </form>
-                        </div> -->
-                                
+    
                         <!-- main categories  -->
-                        <ul class="navbar-nav main-categories justify-content-center flex-grow-1 me-4" style="margin-top: 11px;">
+                        <ul class="navbar-nav main-categories">
 
                             <li class="nav-item mx-2 ms-lg-auto" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">
-                                <a class="nav-link text-uppercase p-0" aria-current="page" href="index.html"> Home </a>
-                                
+                                <a class="nav-link category-btn " aria-current="page" href="#"> All Categories </a>
                             </li>
-                            <li class="nav-item mx-2 " data-bs-dismiss="offcanvas">
-                                <a class="nav-link text-uppercase p-0" aria-current="page" href="#"> About Us <i class="fa-solid fa-angle-down"></i></a>
-                                <!-- sub category start  -->
-                                <ul class="sub-categories">
-                                    <li class="sub-item" data-bs-dismiss="offcanvas" ><a href="about_us.html" class="text-uppercase ">About Orbito Tech</a></li>
-                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="md_message.html" class="text-uppercase ">Message From MD</a></li>
-                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="management.html" class="text-uppercase ">Our Management</a></li>
-                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="clients.html" class="text-uppercase ">Our Clients</a></li>
-                                </ul>
+                            <li class="nav-item mx-2 ms-lg-auto" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">
+                                <a class="nav-link " aria-current="page" href="index.html"> Home </a>
                             </li>
-                            <li class="nav-item mx-2 " data-bs-dismiss="offcanvas">
-                                <a class="nav-link text-uppercase p-0" aria-current="page" href="#"> Products <i class="fa-solid fa-angle-down"></i></a>
-                                <!-- sub category start  -->
-                                <ul class="sub-categories">
-                                    <li class="sub-item" data-bs-dismiss="offcanvas" ><a href="product_store.html" class="text-uppercase ">Sub Item 1
-                                        <i class="fa-solid fa-angle-right"></i>
-                                        <!-- sub sub category start  -->
-                                        <ul class="sub-sub-categories">
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas" ><a href="product_store.html" class="text-uppercase ">Sub Sub Item 1</a></li>
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 2</a></li>
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 3</a></li>
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 4</a></li>
-                                        </ul>
-                                        <!-- sub sub category end  -->
-                                    </a></li>
-
-                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Item 2
-                                        <i class="fa-solid fa-angle-right"></i>
-                                        <!-- sub sub category start  -->
-                                        <ul class="sub-sub-categories">
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas" ><a href="product_store.html" class="text-uppercase ">Sub Sub Item 1</a></li>
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 2</a></li>
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 3</a></li>
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 4</a></li>
-                                        </ul>
-                                        <!-- sub sub category end  -->
-                                    </a></li>
-                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Item 3
-                                        <i class="fa-solid fa-angle-right"></i>
-                                        <!-- sub sub category start  -->
-                                        <ul class="sub-sub-categories">
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas" ><a href="product_store.html" class="text-uppercase ">Sub Sub Item 1</a></li>
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 2</a></li>
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 3</a></li>
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 4</a></li>
-                                        </ul>
-                                        <!-- sub sub category end  -->
-                                    </a></li>
-                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Item 4
-                                        <i class="fa-solid fa-angle-right"></i>
-                                        <!-- sub sub category start  -->
-                                        <ul class="sub-sub-categories">
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas" ><a href="product_store.html" class="text-uppercase ">Sub Sub Item 1</a></li>
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 2</a></li>
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 3</a></li>
-                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 4</a></li>
-                                        </ul>
-                                        <!-- sub sub category end  -->
-                                    </a></li>
-                                </ul>
+                            <li class="nav-item mx-2 ms-lg-auto" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">
+                                <a class="nav-link " aria-current="page" href=""> Special Earbuds </a>
                             </li>
-                            <li class="nav-item mx-2 " data-bs-dismiss="offcanvas">
-                                <a class="nav-link text-uppercase p-0" aria-current="page" href="#"> Gallery <i class="fa-solid fa-angle-down"></i></a>
-                                <!-- sub category start  -->
-                                <ul class="sub-categories">
-                                    <li class="sub-item" data-bs-dismiss="offcanvas" ><a href="image_gallery.html" class="text-uppercase ">Image Gallery</a></li>
-                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="video_gallery.html" class="text-uppercase ">Video Gallery</a></li>
-                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="news.html" class="text-uppercase ">News</a></li>
-                                </ul>
+                            <li class="nav-item mx-2 ms-lg-auto" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">
+                                <a class="nav-link " aria-current="page" href=""> About </a>
                             </li>
-                            <li class="nav-item mx-2 " data-bs-dismiss="offcanvas">
-                                <a class="nav-link text-uppercase p-0" aria-current="page" href="#">  Job Archive <i class="fa-solid fa-angle-down"></i></a>
-                                <!-- sub category start  -->
-                                <ul class="sub-categories">
-                                    <li class="sub-item" data-bs-dismiss="offcanvas" ><a href="career.html" class="text-uppercase ">Career</a></li>
-                                </ul>
+                            <li class="nav-item mx-2 ms-lg-auto" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">
+                                <a class="nav-link " aria-current="page" href=""> All Brands </a>
                             </li>
-                            <li class="nav-item mx-2 " data-bs-dismiss="offcanvas">
-                                <a class="nav-link text-uppercase p-0" aria-current="page" href="#">  Contact Us <i class="fa-solid fa-angle-down"></i></a>
-                                <!-- sub category start  -->
-                                <ul class="sub-categories">
-                                    <li class="sub-item" data-bs-dismiss="offcanvas" ><a href="contact_us.html" class="text-uppercase ">Contact Us</a></li>
-                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="contact_expert.html" class="text-uppercase ">Ask an Expert</a></li>
-                                </ul>
+                            <li class="nav-item mx-2 ms-lg-auto" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">
+                                <a class="nav-link " aria-current="page" href=""> Contact </a>
                             </li>
-                            <li class="nav-item mx-2 " data-bs-dismiss="offcanvas">
-                                <a class="nav-link text-uppercase p-0" aria-current="page" href="#">  Services <i class="fa-solid fa-angle-down"></i></a>
-                                <!-- sub category start  -->
-                                <ul class="sub-categories">
-                                    <li class="sub-item" data-bs-dismiss="offcanvas" ><a href="service_technical_support.html" class="text-uppercase ">Technical Support</a></li>
-                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="service_complain.html" class="text-uppercase ">Complain</a></li>
-                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="service_software.html" class="text-uppercase ">Software</a></li>
-                                </ul>
+                            <li class="nav-item mx-2 ms-lg-auto" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">
+                                <a class="nav-link " aria-current="page" href=""> Help </a>
                             </li>
 
-                           
-                        
                         </ul>
-
-                        <a class=" text-uppercase btn btn-primary registration" aria-current="page" href="registration.html"> Registration </a>
 
                     </div>
                 </div>
@@ -223,7 +138,7 @@
     <main class="overflow-hidden top-margin">
 
     <!-- top-slider start -->
-    <section class="top-slider mt-3">
+    <section class="top-slider">
         <div class="container">
             <div class="top-slider-wrap">
                 <!-- slide start  -->
