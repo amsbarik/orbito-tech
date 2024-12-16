@@ -223,6 +223,85 @@ header{background: lighten($color: $dark, $amount: 6); position: fixed; top: 0; 
 
 
 // media start 
-@media (max-width: 992px) {
-    
+@media (max-width:1200px) {
+    .header{
+        .header-wrap{
+          padding: 2px 0;
+          .search-lg{
+            input{font-size: .875rem;}
+            .search-btn{font-size: .875rem;}
+          }
+          .logo-lg{ height: 3.5rem;}
+          .user-items{
+            font-size: 1.2rem;
+            .badge{
+              width: 1.3rem;
+              height: 1.3rem;
+              text-align: center;
+              font-size: .7rem;
+            //   padding-top: 5px;
+            }
+          }
+        }
+        
+      }
+
+    // navbar css start
+    .navbar{
+        .offcanvas{
+            width: 250px;
+            .main-categories{
+                
+                .nav-item{
+                    font-size: .75rem;
+                    // padding: 12px 0;
+                    // position: relative;
+                    .nav-link{
+                        // letter-spacing: 2px;
+                        i{font-size: .7rem; margin-left: -3px;}
+                    }
+                    // &:hover{
+                    //     .sub-categories{
+                    //         display: block;
+                    //     }
+                    // }
+
+                    .sub-categories{
+                        // position: absolute;
+                        // left: 0;
+                        top: 41px;
+                        // padding: .5rem 1rem;
+                        // width: 20rem;
+                        
+                    .sub-item{
+                        font-size: .75rem;
+                        // padding: .5rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }    
 }
+
+
+
+
+
+@media (min-width: 992px) {
+
+  .nav-bottom{
+      display: none;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
