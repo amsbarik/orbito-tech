@@ -21,7 +21,7 @@
 <body>
     
     <!--Main Navigation start-->
-    <header>
+    <header class="z-3">
         <!-- Navbar top start-->
          <div class="container header d-none d-lg-block">
             <div class=" header-wrap d-flex justify-content-between position-relative">
@@ -461,6 +461,110 @@
     </section>
     <!-- products end -->
 
+
+    <!-- order-cart start -->
+    <div class="order-cart-container">
+        
+        <div id="orderCartWrap" class="order-cart-wrap">
+            <form action="">
+                <div  class="order-cart overflow-hidden ">
+                    <div class="cart-top px-3 px-lg-4 d-flex justify-content-between align-items-center mb-2" >
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title text-uppercase fw-medium"> Your Cart</h5>
+                        </div>
+                        <button type="button" class="btn p-0 close-btn" onclick="closeOrderCart()" role="button">&#10005;</button>
+
+                    </div>
+    
+                    <!-- product items start1 -->
+                    <div class="cart-item px-3 d-flex justify-content-between ">
+                        
+                        <div class="card border-0 " >
+                            <div class="row g-0">
+                              <div class="col-2">
+                                <img src="assets//img/products/product.webp" class=" object-fit-cover" width="100%" height="100%" alt="...">
+                              </div>
+                              <div class="col-10">
+                                <div class="card-body py-0">
+                                  <h5 class="card-title m-0">ELITE Quality Printed Panjabi I MP-193</h5>
+                                  <p class="price mt-1 fw-semibold mb-0 ">
+                                    <span>6,250</span> <i class="fa-solid fa-bangladeshi-taka-sign"></i> 
+                                    <span class="px-1">&#10005;</span>  <span>2</span>
+                                    <i class="fa-solid fa-equals px-1"></i>
+                                    <span>12,500</span> <i class="fa-solid fa-bangladeshi-taka-sign"></i> 
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+    
+                        <button class="btn p-0 text-dark btn-delete "><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <!-- product items end -->
+
+                    <!-- product items start1 -->
+                    <div class="cart-item px-3 d-flex justify-content-between ">
+                        
+                        <div class="card border-0 " >
+                            <div class="row g-0">
+                              <div class="col-2">
+                                <img src="assets//img/products/product.webp" class=" object-fit-cover" width="100%" height="100%" alt="...">
+                              </div>
+                              <div class="col-10">
+                                <div class="card-body py-0">
+                                  <h5 class="card-title m-0">ELITE Quality Printed Panjabi I MP-193</h5>
+                                  <p class="price mt-1 fw-semibold mb-0 ">
+                                    <span>6,250</span> <i class="fa-solid fa-bangladeshi-taka-sign"></i> 
+                                    <span class="px-1">&#10005;</span>  <span>2</span>
+                                    <i class="fa-solid fa-equals px-1"></i>
+                                    <span>12,500</span> <i class="fa-solid fa-bangladeshi-taka-sign"></i> 
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+    
+                        <button class="btn p-0 text-dark btn-delete "><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <!-- product items end -->
+
+                    <!-- totals cart-bottom start  -->
+                    <div class="cart-bottom">
+                        <div class="d-flex promo-code-wrap">
+                            <div class="">
+                              <input type="text" class="form-control" id="promo-code" placeholder="Promo code" value="">
+                            </div>
+                            <div class="ms-2">
+                              <button type="submit" class="btn btn-primary" >Apply</button>
+                            </div>
+                        </div>
+
+                        <div class="row prices p-2 g-0 row-cols-2 text-end">
+                            <div class="col">Sub-Total</div>
+                            <div class="col fw-semibold">12,500<i class="fa-solid fa-bangladeshi-taka-sign"></i></div>
+                        </div>
+                        <hr class="m-0">
+                        <div class="row prices p-2 g-0 row-cols-2 text-end">
+                            <div class="col">Total</div>
+                            <div class="col fw-semibold">12,500<i class="fa-solid fa-bangladeshi-taka-sign"></i></div>
+                        </div>
+
+                        <a href="#" onclick="closeOrderCart()" role="button" class="btn btn-primary rounded-0 " style="width: 100%;">Checkout</a>
+                    </div>
+                   
+                </div>
+            </form>
+        </div>
+
+        
+
+        <!-- order card box start  -->
+        <div class="order-cart-box position-fixed rounded-1 z-3" onclick="showOrderCart()" role="button">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="badge position-absolute bg-danger rounded-circle">7</span>
+        </div>
+    </div>
+    <!-- order-cart end -->
 
 
     </main>

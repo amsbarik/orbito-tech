@@ -18,7 +18,7 @@
     transition: .3s;
     &:hover{
         color: $white;
-        background: darken($color: $primary, $amount: 6);
+        background: darken($color: $primary, $amount: 10);
     }
 }
 .btn-dark{
