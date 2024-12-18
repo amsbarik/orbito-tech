@@ -3,20 +3,6 @@
 let body = document.querySelector("body"); 
 let orderCartWrap = document.getElementById('orderCartWrap');
 
-// function showOrderCart(){
-//     orderCartWrap.classList.add('overlay')
-//     orderCartWrap.delay('800')
-//     orderCartWrap.fadeIn('500')
-//     body.style.overflow = "hidden"
-// }
-
-// function closeOrderCart(){
-//     orderCartWrap.classList.remove('overlay')
-//     orderCartWrap.delay('800')
-//     orderCartWrap.fadeOut('500')
-//     body.style.overflow = "auto"
-// }
-
 function showOrderCart() {
     orderCartWrap.classList.add('overlay');
     orderCartWrap.style.opacity = 0; // Start with invisible
@@ -56,14 +42,6 @@ document.querySelectorAll('.cart-input').forEach(input => {
 const maxQty = 10;  // Replace this with your actual maximum quantity
 
 // Function to increase quantity
-// function increaseQty(button) {
-//     const qtyInput = button.closest('.qty-layout').querySelector('.cart-input');
-//     let currentValue = parseInt(qtyInput.value);
-//     if (currentValue < maxQty) {
-//         qtyInput.value = currentValue + 1;
-//     }
-// }
-
 function increaseQty(button) {
     const qtyInput = button.closest('.qty-layout').querySelector('.cart-input');
     let currentValue = parseInt(qtyInput.value);
@@ -74,15 +52,6 @@ function increaseQty(button) {
 }
 
 // Function to decrease quantity
-// function decreaseQty(button) {
-//     const qtyInput = button.closest('.qty-layout').querySelector('.cart-input');
-//     let currentValue = parseInt(qtyInput.value);
-//     if (currentValue > 1) {
-//         qtyInput.value = currentValue - 1;
-//     }
-// }
-
-
 function decreaseQty(button) {
     const qtyInput = button.closest('.qty-layout').querySelector('.cart-input');
     let currentValue = parseInt(qtyInput.value);
@@ -91,8 +60,6 @@ function decreaseQty(button) {
         updateTotals();
     }
 }
-
-
 
 // Attach event listeners to all cart-plus and cart-minus buttons
 document.querySelectorAll('.cart-plus').forEach(button => {
@@ -106,9 +73,6 @@ document.querySelectorAll('.cart-minus').forEach(button => {
         decreaseQty(this);
     });
 });
-
-
-
 
 // delete items from cart js 
 document.querySelectorAll('.btn-delete').forEach(button => {

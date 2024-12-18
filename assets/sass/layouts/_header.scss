@@ -226,7 +226,7 @@ header{background: lighten($color: $dark, $amount: 6); position: fixed; top: 0; 
 @media (max-width:1200px) {
     .header{
         .header-wrap{
-          padding: 2px 0;
+        //   padding: 2px 0;
           .search-lg{
             input{font-size: .875rem;}
             .search-btn{font-size: .875rem;}
